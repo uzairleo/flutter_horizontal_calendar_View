@@ -76,8 +76,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 80,
                       controller: _controller,
                       initialSelectedDate: DateTime.now(),
-                      selectionColor: Colors.transparent,
-                      selectedTextColor: Colors.black,
+                      selectionColor:
+                          Colors.blue.withOpacity(0.6), //Colors.transparent,
+                      selectedTextColor: Colors.white, //Colors.black,
                       locale: "en_us",
                       monthTextStyle: TextStyle(color: Colors.transparent),
                       onDateChange: (date) {
@@ -92,20 +93,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              Positioned(
-                left: 130,
-                top: 220,
-                child: Opacity(
-                  opacity: 0.6,
-                  child: Container(
-                    width: 70,
-                    height: 100,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12.0),
-                        color: Colors.blue.withOpacity(0.6)),
-                  ),
-                ),
-              )
+              // Positioned(
+              //   left: 140,
+              //   top: 230,
+              //   child: Opacity(
+              //     opacity: 0.6,
+              //     child: Container(
+              //       width: 60,
+              //       height: 80,
+              //       decoration: BoxDecoration(
+              //           borderRadius: BorderRadius.circular(12.0),
+              //           color: Colors.blue.withOpacity(0.6)),
+              //     ),
+              //   ),
+              // )
             ],
           ),
         ));
